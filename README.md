@@ -43,25 +43,6 @@ contextcard/
 └── README.md
 ```
 
-## Environment Variables
-
-Create `.env.local` in the project root:
-
-```bash
-EXA_API_KEY=your_exa_key_here
-GEMINI_API_KEY=your_gemini_key_here
-```
-
-## Install and Run
-
-```bash
-npm install
-npm run dev
-```
-
-Open:
-- `http://localhost:3000`
-
 ## Data Flow
 
 1. User submits name and context on `/`.
@@ -80,13 +61,6 @@ Open:
 - If all Exa queries fail/empty, route returns `404`.
 - Gemini markdown code fences are stripped before parsing JSON.
 - API returns actionable `error` messages for UI display.
-
-## Deployment (Vercel)
-
-1. Push to GitHub.
-2. Import the repo in Vercel.
-3. Add `EXA_API_KEY` and `GEMINI_API_KEY` in Vercel project settings.
-4. Deploy.
 
 ## Notes
 
